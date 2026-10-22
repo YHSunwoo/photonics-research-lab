@@ -6,7 +6,7 @@
 
 저장소 Settings → Pages → Deploy from a branch → `main` / `/docs` → Save.
 
-예상 주소: `https://wkqcnpqkq.github.io/photonics-research-lab/`
+예상 주소: `https://photonicsresearchlab.github.io/prl/`
 이 주소는 Pages 배포 성공을 확인한 뒤 사용합니다.
 
 ## 2. Supabase (프로젝트 소유자 최초 설정)
