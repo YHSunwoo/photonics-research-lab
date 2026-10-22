@@ -1,0 +1,1 @@
+{"name":"photonics-research-lab","private":true,"version":"1.0.0","description":"Photonics Research Lab website and admin CMS","scripts":{"test":"node --test tests/*.test.cjs"},"engines":{"node":">=22"},"devDependencies":{"@electric-sql/pglite":"0.5.10"}}

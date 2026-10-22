@@ -1,0 +1,108 @@
+/* Inner pages: comfortable reading sizes without changing the home page. */
+.inner-page main {font-size:17px}
+.inner-page main .eyebrow {font-size:13px;letter-spacing:1.8px}
+.inner-page main .label {font-size:12px;letter-spacing:1px}
+.inner-page main .page-desc {font-size:18px;line-height:1.9}
+.inner-page main .tabs a {font-size:16px;padding-top:21px;padding-bottom:21px}
+.inner-page main .text-link,.inner-page main .button {font-size:16px}
+.inner-page main .muted,.inner-page main .data-note {font-size:14px;line-height:1.9}
+.inner-page main .search-box>span,.inner-page main .year-select {font-size:14px}
+.inner-page main .search-box input,.inner-page main .year-select select {font-size:17px;padding:14px 16px}
+.inner-page main .catalog-meta {font-size:14px;line-height:1.8;flex-wrap:wrap}
+.inner-page main .citation {padding-top:30px;padding-bottom:30px}
+.inner-page main .citation-number {font-size:16px}
+.inner-page main .citation h3 {font-size:20px;line-height:1.65;margin:10px 0 12px}
+.inner-page main .authors,.inner-page main .journal-line {font-size:16px;line-height:1.85}
+.inner-page main .full-citation {font-size:18px;line-height:1.9}
+.inner-page main .paper-link {font-size:16px;padding-top:9px}
+.inner-page main .pagination,.inner-page main .pagination button {font-size:15px}
+.inner-page main .professor-panel h2 {font-size:46px}
+.inner-page main .professor-panel h2>span {font-size:20px}
+.inner-page main .professor-ko {font-size:21px}
+.inner-page main .professor-panel>div>p:not(.eyebrow):not(.professor-ko) {font-size:17px;line-height:1.9}
+.inner-page main .professor-contact {font-size:16px;line-height:1.8}
+.inner-page main .education-mini p,.inner-page main .cv-details p {font-size:16px;line-height:1.9}
+.inner-page main .cv-details summary {font-size:18px;padding:22px 0}
+.inner-page main .member h3 {font-size:27px;line-height:1.4}
+.inner-page main .korean-name {font-size:16px}
+.inner-page main .term {font-size:15px;line-height:1.8}
+.inner-page main .member-email {font-size:14px;line-height:1.8}
+.inner-page main .member-papers>a {font-size:15px;line-height:1.85;margin-top:14px}
+.inner-page main .empty-panel {font-size:18px;line-height:1.8}
+.inner-page main .empty-panel>span {font-size:15px;line-height:1.8}
+.inner-page main .alumni-banner>span:last-child {font-size:16px}
+.inner-page main .alumni-row {font-size:16px;line-height:1.8}
+.inner-page main .alumni-row strong {font-size:20px}
+.inner-page main .alumni-row small {font-size:14px}
+.inner-page main .alumni-row a {font-size:15px}
+.inner-page main .alumni-head {font-size:13px}
+.inner-page main .research-jump a {font-size:15px;line-height:1.8}
+.inner-page main .research-detail h3 {font-size:22px;line-height:1.7}
+.inner-page main .research-detail p[lang=ko] {font-size:18px;line-height:1.95}
+.inner-page main .tag-list>span {font-size:13px;line-height:1.6}
+.inner-page main .photo-button>span {font-size:14px}
+.inner-page main .story-date {font-size:14px}
+.inner-page main .story-badge {font-size:11px}
+.inner-page main .story h3 {font-size:20px;line-height:1.7}
+.inner-page main .article-body p {font-size:18px;line-height:2}
+.inner-page main .contact-card>p:not(.eyebrow),.inner-page main .address-card>p:not(.eyebrow) {font-size:17px;line-height:1.9}
+.inner-page main .contact-item p {font-size:18px;line-height:1.9}
+.inner-page main .recruit-intro {font-size:18px;line-height:1.95}
+.inner-page main .recruit-grid article>span {font-size:12px}
+.inner-page main .recruit-grid h3 {font-size:23px}
+.inner-page main .recruit-grid p {font-size:17px;line-height:1.95}
+.inner-page main .join-block p:not(.eyebrow) {font-size:17px;line-height:1.9}
+@media(max-width:900px) {
+  .inner-page main .professor-panel {grid-template-columns:190px 1fr;gap:28px}
+  .inner-page main .professor-panel h2 {font-size:37px}
+  .inner-page main .cv-details {margin-left:218px}
+  .inner-page main .catalog-tools {flex-wrap:wrap}
+  .inner-page main .catalog-tools .search-box {min-width:240px}
+}
+@media(max-width:600px) {
+  .inner-page main {font-size:16px}
+  .inner-page main .eyebrow {font-size:11px;letter-spacing:1.3px}
+  .inner-page main .label {font-size:11px}
+  .inner-page main .page-desc {font-size:16px}
+  .inner-page main .tabs a {font-size:15px;padding-top:18px;padding-bottom:18px}
+  .inner-page main .text-link,.inner-page main .button {font-size:15px}
+  .inner-page main .search-box input,.inner-page main .year-select select {font-size:16px}
+  .inner-page main .catalog-meta {font-size:13px}
+  .inner-page main .citation {grid-template-columns:32px 1fr;gap:12px;padding:26px 0}
+  .inner-page main .citation-number {font-size:14px}
+  .inner-page main .citation h3 {font-size:18px;line-height:1.7}
+  .inner-page main .authors,.inner-page main .journal-line {font-size:15px;line-height:1.9;overflow-wrap:anywhere}
+  .inner-page main .full-citation {font-size:16px}
+  .inner-page main .paper-link {font-size:15px}
+  .inner-page main .pagination {gap:12px;font-size:13px}
+  .inner-page main .pagination button {font-size:13px;padding:11px 12px}
+  .inner-page main .professor-panel {grid-template-columns:1fr}
+  .inner-page main .professor-panel h2 {font-size:34px}
+  .inner-page main .professor-panel h2>span {font-size:17px}
+  .inner-page main .professor-ko {font-size:19px}
+  .inner-page main .professor-panel>div>p:not(.eyebrow):not(.professor-ko) {font-size:16px}
+  .inner-page main .professor-contact {font-size:15px}
+  .inner-page main .cv-details {margin-left:0}
+  .inner-page main .cv-details summary {font-size:16px}
+  .inner-page main .education-mini p,.inner-page main .cv-details p {font-size:15px}
+  .inner-page main .member {grid-template-columns:80px minmax(0,1fr);gap:17px}
+  .inner-page main .member h3 {font-size:23px}
+  .inner-page main .korean-name {font-size:15px}
+  .inner-page main .member-email {font-size:13px}
+  .inner-page main .member-papers {margin-top:18px}
+  .inner-page main .member-papers>a {font-size:14px}
+  .inner-page main .member-papers .label {font-size:10px;letter-spacing:.6px}
+  .inner-page main .alumni-row strong {font-size:20px}
+  .inner-page main .alumni-row>span {font-size:16px}
+  .inner-page main .research-jump a {font-size:14px}
+  .inner-page main .research-detail h3 {font-size:20px}
+  .inner-page main .research-detail p[lang=ko] {font-size:16px}
+  .inner-page main .tag-list>span {font-size:12px}
+  .inner-page main .story h3 {font-size:19px}
+  .inner-page main .article-body p {font-size:16px}
+  .inner-page main .contact-card>p:not(.eyebrow),.inner-page main .address-card>p:not(.eyebrow) {font-size:16px}
+  .inner-page main .contact-item p {font-size:16px}
+  .inner-page main .recruit-intro,.inner-page main .recruit-grid p {font-size:16px}
+  .inner-page main .recruit-grid h3 {font-size:21px}
+  .inner-page main .join-block p:not(.eyebrow) {font-size:16px}
+}
