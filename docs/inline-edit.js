@@ -1,0 +1,6 @@
+(()=>{'use strict';let allowed=false,verified=false;const API=window.PRLAdminAPI;
+function editURL(node){const u=new URL('admin.html',location.href);u.searchParams.set('category',node.dataset.editCategory);u.searchParams.set('record',node.dataset.editRecord);u.searchParams.set('v','editor1');return u.pathname+u.search;}
+function refresh(){if(!allowed)return;document.querySelectorAll('[data-edit-category]').forEach(node=>{let button=[...node.children].find(el=>el.classList.contains('inline-edit'));if(!button){button=document.createElement('a');button.className='inline-edit';button.textContent='✎ 수정';button.setAttribute('aria-label','이 게시물 수정');node.append(button);}button.href=editURL(node);});}
+async function init(){if(verified){refresh();return;}verified=true;if(!API?.configured||!API.hasSession())return;try{await API.verifyAdmin();allowed=true;const bar=document.createElement('div');bar.className='inline-admin-bar';bar.innerHTML='<span>관리자 편집 모드</span><a href="admin.html?v=editor1">전체 콘텐츠 관리 ↗</a>';document.querySelector('#header')?.after(bar);refresh();}catch{/* Public browsing stays available when the session expires. */}}
+window.PRLInlineEditing=Object.freeze({init,refresh});
+})();
