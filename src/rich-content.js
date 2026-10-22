@@ -4,7 +4,7 @@ export function sanitize(html){
  const doc=new DOMParser().parseFromString(cleaned,'text/html');
  for(const el of doc.body.querySelectorAll('*')){
   const keep=[];for(const property of ['font-family','font-size','color','background-color','text-align','width','height']){const value=el.style.getPropertyValue(property);if(!value)continue;let allowed=false;
-   if(property==='font-family')allowed=/^[\w\s,"'-]+$/.test(value);
+   if(property==='font-family')allowed=/^[\p{L}\p{N}\s,"'-]+$/u.test(value);
    if(property==='font-size')allowed=/^(1[2-9]|[2-4]\d|50)px$/.test(value);
    if(['color','background-color'].includes(property))allowed=/^(#[\da-f]{3,8}|rgba?\([\d\s.,%]+\)|[a-z]+)$/i.test(value);
    if(property==='text-align')allowed=/^(left|center|right|justify)$/.test(value);
